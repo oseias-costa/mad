@@ -1,0 +1,37 @@
+.Start{
+    display: flex;
+}
+
+.Start__primary{
+    position: relative;
+    top: 15vh;
+    right: 27vh;
+    text-align: center;
+    width: 64vw;  
+}
+
+.Start__primary > a{
+    color: #fff;
+    background-color: var(--blue-strong);
+    border-radius: 0.2em;
+    padding: 0.4em 0.6em;
+    font-size: 1.1em;
+}
+
+.Start__primary > h1 {
+    color: var(--grey-strong);
+    font-size: 3em;
+    font-weight: 800;
+}
+
+.Start__primary > h3{
+    color: var(--blue-midle);
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+.Start__back{
+    position: relative;
+    right: 5em;
+    height: 33em;
+}
