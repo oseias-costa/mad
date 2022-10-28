@@ -1,0 +1,14 @@
+.Result{
+    background-color: var(--blue-strong);
+
+}
+
+.Result__Wave{
+    width: 100%;
+    background-color: #fff;
+    padding-bottom: 0;
+}
+
+.Result__Block{
+    
+}
