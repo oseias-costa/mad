@@ -10,5 +10,25 @@
 }
 
 .Result__Block{
-    
+    display: flex;
+}
+
+.Result__Description{
+    position: relative;
+    left: 20em;
+    width: 50em;
+}
+
+.Result__Description > h2{
+    font-size: 2em;
+    color: #fff;
+}
+
+.Result__Block-photo{
+    width: 65em;
+}
+
+.foto{
+    width: 50em;
+    display: flex;
 }
