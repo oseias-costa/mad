@@ -1,0 +1,42 @@
+.HowWork{
+    background-color: var(--blue-strong);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 7em 0 7em 0;
+}
+
+.HowWork > h2 {
+    padding-bottom: 2em;
+    font-size: 2em;
+}
+
+.HowWork > ul{
+    max-width: 40em;
+}
+
+.HowWork__Item{
+    display: flex;
+    margin-bottom: 1.2em;
+}
+
+.HowWork__Item:last-of-type{
+    margin-bottom: 0;
+}
+
+.HowWork__Item-icon{
+    display: flex;
+    align-items: center;
+    padding-right: 2em;
+}
+
+.HowWork__Item-subtitle{
+    color: var(--blue-midle);
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.HowWork__Item-content{
+    font-weight: 300;
+}

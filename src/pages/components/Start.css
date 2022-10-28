@@ -5,33 +5,66 @@
 .Start__primary{
     position: relative;
     top: 15vh;
-    right: 27vh;
+    right: 16vh;
     text-align: center;
-    width: 64vw;  
+    width: 55vw;  
+    align-items: center;
+    justify-content: center;
 }
 
 .Start__primary > a{
     color: #fff;
     background-color: var(--blue-strong);
+    border: 1px solid var(--blue-strong);
     border-radius: 0.2em;
     padding: 0.4em 0.6em;
     font-size: 1.1em;
+    transition: all 0.3s ease-in-out;
 }
 
-.Start__primary > h1 {
+.Start__primary > a:hover{
+    color: var(--blue-strong);
+    background-color: #fff;
+}
+
+.Start__primary-h1{
     color: var(--grey-strong);
-    font-size: 3em;
+    font-size: 2.5em;
     font-weight: 800;
+    display: inline;
+    text-transform: uppercase;
 }
 
 .Start__primary > h3{
     color: var(--blue-midle);
+    font-weight: 400;
     font-size: 1.5em;
     margin-bottom: 1em;
+    margin-top: 0.5em;
 }
 
 .Start__back{
     position: relative;
     right: 5em;
     height: 33em;
+}
+
+.Start__primary-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Start__primary-rocket{
+    width: 4.5em;
+    display: flex;
+}
+
+.Start__primary-destak{
+    color: var(--blue-midle);
+    display: inline-block;
+    font-size: 2.5em;
+    font-weight: 800;
+    display: inline;
+    text-transform: uppercase;
 }

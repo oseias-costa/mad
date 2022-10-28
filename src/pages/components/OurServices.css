@@ -1,0 +1,53 @@
+.OurServices{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 7em 0 7em 0;
+}
+
+.OurServices > h2{
+    color: var(--grey-strong);
+    font-size: 2em;
+    padding-bottom: 1em;
+}
+
+.OurServices__Block{
+    display: flex;
+    flex-wrap: wrap;
+    width: 55em;
+    justify-content: center;
+}
+
+.OurServices__Block-item{
+    display: flex;
+    width: 15em;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    margin-top: 2em;
+}
+
+.OurServices__Block-itemIcon{
+    padding-right: 1em;
+}
+
+.OurServices__Block-itemDesc{
+    display: flex;
+    align-items: center;
+    color: var(--grey-strong);
+}
+
+.OurServices > a{
+    color: #fff;
+    background-color: var(--blue-strong);
+    border: 1px solid var(--blue-strong);
+    border-radius: 0.2em;
+    padding: 0.4em 0.6em;
+    font-size: 1.1em;
+    transition: all 0.3s ease-in-out;
+    margin-top: 4em;
+}
+
+.OurServices > a:hover{
+    color: var(--blue-strong);
+    background-color: #fff;
+}

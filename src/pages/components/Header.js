@@ -15,9 +15,9 @@ const Header = () => {
                 <path d="M175.464 30.9091H170.189V0.00116358H175.464V30.9091Z" fill="#0D436E"/>
             </svg>
             <nav>
-                <ul>
+                <ul className="Header__Menu">
                     <li><a href='#'>Início</a></li>
-                    <li><a href="#">Como funciona</a></li>
+                    <li><a href="#HowWork">Como funciona</a></li>
                     <li><a href="#">Quem Somos</a></li>
                 </ul>
             </nav>
