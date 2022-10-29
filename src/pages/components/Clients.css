@@ -1,0 +1,20 @@
+.Clients{
+    padding: 7em 0 7em 0;
+}
+
+.Clients__Slide-hidden{
+    display: none;
+}
+
+.Clients__Slide-btn{
+    padding: 0.3em;
+    background-color: var(--grey-strong);
+    border-radius: 2em;
+    cursor: pointer;
+}
+.Clients__Slide-btnActiv{
+    padding: 0.3em;
+    background-color: var(--blue-midle);
+    border-radius: 2em;
+    cursor: pointer;
+}

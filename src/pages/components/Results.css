@@ -32,3 +32,24 @@
     width: 50em;
     display: flex;
 }
+
+.Result__Description-item{
+    display: flex;
+    align-items: center;
+    padding-top: 2em;
+}
+
+.Result__Description-itemIcon{
+    padding-right: 3em;
+}
+
+.Result__Description-itemText > h3{
+    color: #fff;
+    font-size: 1.4em;
+}
+
+.Result__Description-itemText > p{
+    color: #fff;
+    font-size: 1.4em;
+
+}

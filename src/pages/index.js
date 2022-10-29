@@ -1,4 +1,5 @@
 import React from "react"
+import Clients from "./components/Clients"
 import Header from "./components/Header"
 import HowWork from "./components/HowWork"
 import OurServices from "./components/OurServices"
@@ -15,6 +16,7 @@ const IndexPage = () => {
       <HowWork />
       <OurServices />
       <Results />
+      <Clients />
     </main>
   )
 }
