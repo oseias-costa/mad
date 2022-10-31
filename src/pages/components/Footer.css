@@ -1,0 +1,19 @@
+.Footer{
+    background-color: var(--blue-strong);
+    color: #fff;
+    display: flex;
+    padding: 3em;
+    justify-content: space-around;
+}
+
+.Footer__Item-nav{
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    padding-bottom: 1em;
+    
+}
+.Footer__Item-nav > a{
+    padding-bottom: .7em;
+}
+
