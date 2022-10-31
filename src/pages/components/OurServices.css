@@ -14,7 +14,7 @@
 .OurServices__Block{
     display: flex;
     flex-wrap: wrap;
-    width: 55em;
+    max-width: 55em;
     justify-content: center;
 }
 
@@ -50,4 +50,10 @@
 .OurServices > a:hover{
     color: var(--blue-strong);
     background-color: #fff;
+}
+
+.@media (max-width: 740px) {
+  .OurServices__Block {
+    background-color: #000;
+  }
 }
