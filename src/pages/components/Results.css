@@ -1,6 +1,5 @@
 .Result{
     background-color: var(--blue-strong);
-
 }
 
 .Result__Wave{
@@ -11,12 +10,12 @@
 
 .Result__Block{
     display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
 }
 
 .Result__Description{
-    position: relative;
-    left: 20em;
-    width: 50em;
+    max-width: 35em;
 }
 
 .Result__Description > h2{
@@ -24,12 +23,9 @@
     color: #fff;
 }
 
-.Result__Block-photo{
-    width: 65em;
-}
-
 .foto{
-    width: 50em;
+    padding-top: 2em;
+    width: 25em;
     display: flex;
 }
 
@@ -51,7 +47,21 @@
 .Result__Description-itemText > p{
     color: #fff;
     font-size: 1.4em;
-
 }
 
+@media (max-width: 740px){
+    .Result__Block{
+        padding-top: 3em;
+    }
+
+    .Result__Description-item{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .Result__Description > h2{
+        padding-left: 5%;
+        padding-right: 5%;
+        text-align: center;
+    }
+}
 

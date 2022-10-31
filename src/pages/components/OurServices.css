@@ -52,8 +52,14 @@
     background-color: #fff;
 }
 
-.@media (max-width: 740px) {
-  .OurServices__Block {
-    background-color: #000;
+@media (max-width: 740px) {
+  .OurServices__Block-item{
+    flex-direction: column;
+    align-items: center;
+    width: 8em;
+    
+  }
+  .OurServices__Block-itemDesc{
+    text-align: center;
   }
 }

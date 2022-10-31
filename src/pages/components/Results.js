@@ -3,6 +3,7 @@ import './Results.css'
 import { useStaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
 import resultPhoto from '../../images/resultPhoto.png'
+import resultimg from '../../images/resultimg.png'
 import ResultIcon from "./icons/ResultIcon";
 import UsersIcon from "./icons/UsersIcon";
 import MoneyIcon from "./icons/MoneyIcon";
@@ -51,7 +52,9 @@ const Results = () => {
                     
                 </div>
                 <div className="Result__Block-photo">
-                <img src={resultPhoto} className='foto' />
+
+                <img src={resultimg} className='foto' />
+                {/* <img src={resultPhoto} className='foto' /> */}
                 {/* { <Img fluid={data.file.childImageSharp.fluid} /> } */}
                 </div>
             </div>

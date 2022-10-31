@@ -4,6 +4,7 @@
     display: flex;
     padding: 3em;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .Footer__Item-nav{
@@ -25,3 +26,13 @@
     text-transform: uppercase;
 }
 
+@media (max-width: 740px){
+    .Footer{
+        text-align: center;
+    }
+    .Footer__Item-nav{
+        padding-top: 2em;
+        padding-bottom: 2em;
+    }
+
+}

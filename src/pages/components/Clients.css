@@ -98,3 +98,25 @@
     color: var(--blue-strong);
     background-color: #fff;
 }
+
+@media(max-width: 740px) {
+    .Clients{
+        margin: 0;
+        padding-bottom: 9em;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .Clients__Logo{
+        width: 5em;
+        margin: 0.5em;
+    }
+    .Clients__Slide-left{
+        left: 0;
+    }
+    .Clients__Slide-right{
+        right: 0;
+    }
+    .Clients > h2{
+        font-size: 1.7em;
+    }
+}

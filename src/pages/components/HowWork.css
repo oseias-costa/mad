@@ -5,6 +5,7 @@
     flex-direction: column;
     align-items: center;
     padding: 7em 0 7em 0;
+    height: 100vh;
 }
 
 .HowWork > h2 {
@@ -39,4 +40,15 @@
 
 .HowWork__Item-content{
     font-weight: 300;
+}
+
+@media (max-width: 740px){
+    .HowWork{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .HowWork > h2{
+        text-align: center;
+        font-size: 1.8em;
+    }
 }

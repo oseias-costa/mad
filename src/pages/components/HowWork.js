@@ -19,7 +19,7 @@ const HowWork = () => {
     ]
 
     const renderList = list.map((item) => (
-     <li className="HowWork__Item">
+     <li className="HowWork__Item" key={item.title}>
         <div className="HowWork__Item-icon">
             <Verified />
         </div>

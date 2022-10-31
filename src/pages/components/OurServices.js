@@ -38,7 +38,7 @@ const OurServices = () => {
 
     const itemService = list.map((item) => {
         return(
-            <div className="OurServices__Block-item">
+            <div className="OurServices__Block-item" key={item.description}>
                 <div className="OurServices__Block-itemIcon">{item.icon}</div>
                 <div className="OurServices__Block-itemDesc">{item.description}</div>
             </div>
