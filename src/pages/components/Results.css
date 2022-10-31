@@ -1,57 +1,68 @@
-.Result{
-    background-color: var(--blue-strong);
-
+.Result {
+  background-color: var(--blue-strong);
 }
 
-.Result__Wave{
-    width: 100%;
-    background-color: #fff;
-    padding-bottom: 0;
+.Result__Wave {
+  width: 100%;
+  background-color: #fff;
+  padding-bottom: 0;
 }
 
-.Result__Block{
-    display: flex;
+.Result__Block {
+  display: flex;
 }
 
-.Result__Description{
+.Result__Description {
+  position: relative;
+  left: 20em;
+  width: 50em;
+}
+
+.Result__Description > h2 {
+  font-size: 2em;
+  color: #fff;
+}
+
+.Result__Block-photo {
+  width: 65em;
+}
+
+.foto {
+  width: 50em;
+  display: flex;
+}
+
+.Result__Description-item {
+  display: flex;
+  align-items: center;
+  padding-top: 2em;
+}
+
+.Result__Description-itemIcon {
+  padding-right: 3em;
+}
+
+.Result__Description-itemText > h3 {
+  color: #fff;
+  font-size: 1.4em;
+}
+
+.Result__Description-itemText > p {
+  color: #fff;
+  font-size: 1.4em;
+}
+
+@media (max-width: 740px) {
+  .Result__Block {
+    flex-direction: column;
+  }
+
+  .Result__Description {
+    position: static;
+  }
+  .Result__Block-photo {
+    width: 35em;
     position: relative;
-    left: 20em;
-    width: 50em;
+    right: 106%;
+  }
 }
-
-.Result__Description > h2{
-    font-size: 2em;
-    color: #fff;
-}
-
-.Result__Block-photo{
-    width: 65em;
-}
-
-.foto{
-    width: 50em;
-    display: flex;
-}
-
-.Result__Description-item{
-    display: flex;
-    align-items: center;
-    padding-top: 2em;
-}
-
-.Result__Description-itemIcon{
-    padding-right: 3em;
-}
-
-.Result__Description-itemText > h3{
-    color: #fff;
-    font-size: 1.4em;
-}
-
-.Result__Description-itemText > p{
-    color: #fff;
-    font-size: 1.4em;
-
-}
-
-
