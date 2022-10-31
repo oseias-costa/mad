@@ -25,8 +25,6 @@ const Footer = () => {
                     <p>Unidade 2</p>
                     <p>Vila Moema. Turabarão-SC</p>
                 </div>
-
-                
             </div>
         </footer>
     )

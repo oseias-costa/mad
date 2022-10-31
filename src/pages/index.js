@@ -6,6 +6,7 @@ import HowWork from "./components/HowWork"
 import OurServices from "./components/OurServices"
 import Results from "./components/Results"
 import Start from "./components/Start"
+import Whats from "./components/Whats"
 import './index.css'
 
 
@@ -19,6 +20,7 @@ const IndexPage = () => {
       <Results />
       <Clients />
       <Footer />
+      <Whats />
     </main>
   )
 }
