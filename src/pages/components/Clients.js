@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import './Clients.css'
-
+import Left from "./icons/Left";
+import Rigth from "./icons/Rigth";
 
 import AmandaFelippe from '../../images/clients-logo/amandafelippe.png'
 import DraVeronicaRosseto from '../../images/clients-logo/draveronicarosseto.png'
@@ -27,7 +28,6 @@ import BemViver from '../../images/clients-logo/logos-svg/bemviver.png'
 import Meurer from '../../images/clients-logo/logos-svg/meurer.png'
 import Realize from '../../images/clients-logo/logos-svg/realize.png'
 import Flexmatic from '../../images/clients-logo/logos-svg/flexmatic.png'
-import { Left, Rigth } from "./utils/icons";
 
 
 const Clients = () => {
@@ -47,7 +47,7 @@ const Clients = () => {
     
     const classSlider = ['Clients__Slide-activ', 'Clients__Slide-hidden', 'Clients__Slide-btnActiv', 'Clients__Slide-btn' ]
     return(
-        <section className="Clients"> 
+        <section className="Clients" id="Clients"> 
         <Rigth onClick={slideOne} className={'Clients__Slide-right ' + arrowRight} />
         <Left onClick={slideTwo} className={'Clients__Slide-left ' +arrowLeft} />
             <h2>Alguns de Nossos Clientes</h2>
@@ -81,8 +81,13 @@ const Clients = () => {
                 <img src={Virtuosa} alt='Virtuosa Cliníca Estética' className="Clients__Logo"/>
 
             </div>
-            <button className={ slideActiv ==  classSlider[0]  ? classSlider[2]  : classSlider[3] } onClick={slideOne}></button>
-            <button className={ slideActiv ==  classSlider[0]  ? classSlider[3]  : classSlider[2] }  onClick={slideTwo}></button>
+            <div>
+                <button className={ slideActiv ==  classSlider[0]  ? classSlider[2]  : classSlider[3] } onClick={slideOne}></button>
+                <button className={ slideActiv ==  classSlider[0]  ? classSlider[3]  : classSlider[2] }  onClick={slideTwo}></button>
+            </div>
+            <div className="Clients__btn">
+            <a href="https://wa.me/5554999009687" target='_blank'>Escalar meu Negócio</a>
+            </div>
         </section>
     )
 }

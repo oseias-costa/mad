@@ -1,6 +1,6 @@
 import React from 'react'
 import './Footer.css'
-import { Logo } from './utils/icons'
+import Logo from "./icons/Logo";
 
 const Footer = () => {
     return(
@@ -12,8 +12,9 @@ const Footer = () => {
             </div>
             <div className='Footer__Item-nav'>
                 <a href='#'>Início</a>
-                <a href='#'>Como Funciona</a>
-                <a href='#'>Serviços</a>
+                <a href='#HowWork'>Como Funciona</a>
+                <a href='#OurServices'>Serviços</a>
+                <a href='#Clients'>Clientes</a>
             </div>
             <div className='Footer__Item'>
                 <div className='Footer__Item-adress'>

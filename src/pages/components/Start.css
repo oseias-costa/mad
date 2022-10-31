@@ -1,11 +1,12 @@
 .Start{
     display: flex;
+    min-height: 95vh;
 }
 
 .Start__primary{
-    position: relative;
-    top: 15vh;
-    right: 16vh;
+    position: absolute;
+    top: 25%;
+    right: 25%;
     text-align: center;
     width: 55vw;  
     align-items: center;
@@ -67,4 +68,21 @@
     font-weight: 800;
     display: inline;
     text-transform: uppercase;
+}
+
+.Start__primary-btnDown{
+    position: absolute;
+    bottom: 2em;
+    right: 50%;
+    animation: is-bouncing 1s ease-in-out alternate infinite;
+}
+
+@keyframes is-bouncing{
+    to{
+        transform: translateY(10px);
+    }
+}
+
+.Start__primary-linkDown{
+    color: #0d426ed2;
 }

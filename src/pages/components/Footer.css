@@ -17,3 +17,11 @@
     padding-bottom: .7em;
 }
 
+.Footer__Item-adress{
+    padding-bottom: 2em;
+}
+
+.Footer__Item-adress > p:first-of-type{
+    text-transform: uppercase;
+}
+

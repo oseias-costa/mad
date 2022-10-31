@@ -1,9 +1,11 @@
 import React from "react";
 import './Results.css'
-import { MoneyIcon, ResultIcon, UsersIcon } from "./utils/icons";
 import { useStaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
 import resultPhoto from '../../images/resultPhoto.png'
+import ResultIcon from "./icons/ResultIcon";
+import UsersIcon from "./icons/UsersIcon";
+import MoneyIcon from "./icons/MoneyIcon";
 
 const Results = () => {
 

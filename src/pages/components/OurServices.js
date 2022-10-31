@@ -1,12 +1,10 @@
 import React from "react";
-import { 
-    FunilIcon,
-    GoogleIcon,
-    FacebookIcon,
-    ManagmentIcon,
-    ArrowIcon,
-    InboundIcon
-} from "./utils/icons";
+import ArrowIcon from "./icons/ArrowIcon";
+import FacebookIcon from "./icons/FacebookIcon";
+import FunilIcon from "./icons/FunilIcon";
+import GoogleIcon from "./icons/GoogleIcon";
+import InboundIcon from "./icons/InboundIcon";
+import ManagmentIcon from "./icons/ManagmentIcon";
 import './OurServices.css'
 
 const OurServices = () => {
@@ -21,7 +19,7 @@ const OurServices = () => {
             description: 'Google Ads'
         },
         {
-            icon: <FacebookIcon />,
+            icon:  <FacebookIcon />,
             description: 'Facebook Ads'
         },
         {
@@ -49,12 +47,12 @@ const OurServices = () => {
         
 
     return(
-        <section className="OurServices">
+        <section className="OurServices" id='OurServices'>
             <h2>Nossos Serviços</h2>
             <div className="OurServices__Block">
                 {itemService}
             </div>
-            <a href="#">Mais Informações</a>
+            <a href='https://wa.me/5554999009687' target='_blank'>Mais Informações</a>
         </section>
     )
 }

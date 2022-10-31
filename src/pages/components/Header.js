@@ -1,6 +1,6 @@
 import React from "react";
 import './Header.css'
-import { Logo } from "./utils/icons";
+import Logo from "./icons/Logo";
 
 const Header = () => {
     return(
@@ -8,9 +8,9 @@ const Header = () => {
             <Logo />
             <nav>
                 <ul className="Header__Menu">
-                    <li><a href='#'>Início</a></li>
                     <li><a href="#HowWork">Como funciona</a></li>
-                    <li><a href="#">Quem Somos</a></li>
+                    <li><a href="#OurServices">Serviços</a></li>
+                    <li><a href="#Clients">Clientes</a></li>
                 </ul>
             </nav>
         </header>

@@ -1,6 +1,6 @@
 import React from "react";
 import './HowWork.css'
-import {Verified} from "./utils/icons";
+import Verified from "./icons/Verified";
 
 const HowWork = () => {
     const list = [

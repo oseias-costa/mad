@@ -1,7 +1,9 @@
 .Clients{
-    margin: 7em 7em 7em 7em;
+    margin: 4em 7em 10em 7em;
     text-align: center;
     position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
 .Clients > h2{
@@ -40,6 +42,20 @@
     align-items: center;
     flex-wrap: wrap;
     transition: all 0.5s ease-in;
+    opacity: 0;
+    transform: translateX(-20px);
+    animation-name: slide;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slide{
+    from{
+        opacity: 0;
+    } to {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
 .Clients__Slide-left{
@@ -62,4 +78,23 @@
 
 .disable{
     fill: #0d426ed2;
+}
+
+.Clients__btn > a{
+    color: #fff;
+    background-color: var(--blue-strong);
+    border: 1px solid var(--blue-strong);
+    border-radius: 0.2em;
+    padding: 0.4em 0.6em;
+    font-size: 1.1em;
+    transition: all 0.3s ease-in-out;
+    margin-top: 4em;
+    max-width: 15em;
+    position: relative;
+    top: 3em
+}
+
+.Clients__btn > a:hover{
+    color: var(--blue-strong);
+    background-color: #fff;
 }
