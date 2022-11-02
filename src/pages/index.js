@@ -8,7 +8,7 @@ import Results from "./components/Results";
 import Start from "./components/Start";
 import Whats from "./components/Whats";
 import "./index.css";
-import { SEO } from "./components/SEO";
+import SEO from "./components/SEO";
 
 const IndexPage = () => {
   return (
