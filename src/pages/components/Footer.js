@@ -1,6 +1,8 @@
 import React from 'react'
 import './Footer.css'
+import InstagramIcon from './icons/InstagramIcon';
 import Logo from "./icons/Logo";
+import WhatsIcon from './icons/WhatsIcon';
 
 const Footer = () => {
     return(
@@ -9,6 +11,14 @@ const Footer = () => {
                 <Logo />
                 <p>contato@madcompanie.com.br</p>
                 <p>(54) 9 9900-9687</p>
+                <div>
+                    <a href='https://www.instagram.com/maddigital__/' target='_blank'>
+                        <InstagramIcon className='Footer__Item-social' />
+                    </a>
+                    <a href='https://wa.me/5554999009687' target='_blank'>
+                        <WhatsIcon className='Footer__Item-social' />
+                    </a>
+                </div>
             </div>
             <div className='Footer__Item-nav'>
                 <a href='#'>Início</a>

@@ -26,6 +26,25 @@
     text-transform: uppercase;
 }
 
+.Footer__Item-social{
+    fill: var(--blue-midle);
+    width: 3.3em;
+    height: 3.3em;
+    padding: 0.2em;
+    border-radius: 50em;
+    margin-top: 1em;
+    transition: all 0.4s ease-out;
+}
+
+.Footer__Item-social:first-of-type{
+    margin-right: 0.3em;
+}
+
+.Footer__Item-social:hover{
+    background-color: #fff;
+    fill: var(--blue-strong);
+}
+
 @media (max-width: 740px){
     .Footer{
         text-align: center;
