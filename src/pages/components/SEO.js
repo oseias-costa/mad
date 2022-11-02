@@ -1,4 +1,7 @@
 import React from "react";
+import appleTouch from '../../images/favicon_io/apple-touch-icon.png'
+import favicon32 from '../../images/favicon_io/favicon-32x32.png'
+import favicon16 from '../../images/favicon_io/favicon-16x16.png'
 
 export const SEO = () => {
   return (
@@ -33,6 +36,11 @@ export const SEO = () => {
         property="twitter:image"
         content="https://valioze.com.br/clientes/Mad-Digital.png"
       />
+
+      <link rel="apple-touch-icon" sizes="180x180" href={appleTouch} />
+      <link rel="icon" type="image/png" sizes="32x32" href={favicon32} />
+      <link rel="icon" type="image/png" sizes="16x16" href={favicon16} />
+      <link rel="manifest" href="../../images/favicon_io/site.webmanifest" />
     </>
   );
 };

@@ -11,6 +11,9 @@
 
 .Whats__Icon{
     fill:  #fff;
+    position: relative;
+    right: -0.08em;
+    top: 0.15em;
 }
 
 .Whats:hover{

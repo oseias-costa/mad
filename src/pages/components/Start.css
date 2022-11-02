@@ -6,7 +6,7 @@
 .Start__primary{
     position: absolute;
     top: 25%;
-    right: 25%;
+    right: 22.3%;
     text-align: center;
     max-width: 55vw;  
     align-items: center;
@@ -73,7 +73,7 @@
 .Start__primary-btnDown{
     position: absolute;
     bottom: 2em;
-    right: 50%;
+    right: 48%;
     animation: is-bouncing 1s ease-in-out alternate infinite;
 }
 
