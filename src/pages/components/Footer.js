@@ -9,8 +9,9 @@ const Footer = () => {
         <footer className='Footer'>
             <div className='Footer__Item'>
                 <Logo />
-                <p>contato@madcompanie.com.br</p>
+                <p>suporte@maddigital.com.br</p>
                 <p>(54) 9 9900-9687</p>
+                <p>(48) 9 9173-1687</p>
                 <div>
                     <a href='https://www.instagram.com/maddigital__/' target='_blank'>
                         <InstagramIcon className='Footer__Item-social' />
