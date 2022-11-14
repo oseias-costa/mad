@@ -15,6 +15,8 @@ import Cabeceira from '../../images/clients-logo/cabeceira.png'
 import OralBrasil from '../../images/clients-logo/oralbrasil.png'
 import Tac from '../../images/clients-logo/tac.png'
 import Virtuosa from '../../images/clients-logo/virtuosa.png'
+import Coser from '../../images/clients-logo/coser-logo.png'
+import Briancini from '../../images/clients-logo/briancini.png'
 
 import Ameii from '../../images/clients-logo/logos-svg/amei.png'
 import ArcoIris from '../../images/clients-logo/logos-svg/arcoiris.png'
@@ -28,6 +30,8 @@ import BemViver from '../../images/clients-logo/logos-svg/bemviver.png'
 import Meurer from '../../images/clients-logo/logos-svg/meurer.png'
 import Realize from '../../images/clients-logo/logos-svg/realize.png'
 import Flexmatic from '../../images/clients-logo/logos-svg/flexmatic.png'
+import CoserPremium from '../../images/clients-logo/coser-premium.png'
+import Sls from '../../images/clients-logo/sls.png'
 
 
 const Clients = () => {
@@ -35,21 +39,21 @@ const Clients = () => {
     const [arrowRight, setArrowRight] = useState('active')   
     const [arrowLeft, setArrowLeft] = useState('disabled')   
     const slideOne = () => {
-        setSlideActiv('Clients__Slide-activ')
-        setArrowRight('active')
-        setArrowLeft('disable')
-    }
-    const slideTwo = () => {
         setSlideActiv('Clients__Slide-hidden')
         setArrowRight('disable')
         setArrowLeft('active')
+    }
+    const slideTwo = () => {
+        setSlideActiv('Clients__Slide-activ')
+        setArrowRight('active')
+        setArrowLeft('disable')
     }
     
     const classSlider = ['Clients__Slide-activ', 'Clients__Slide-hidden', 'Clients__Slide-btnActiv', 'Clients__Slide-btn' ]
     return(
         <section className="Clients" id="Clients"> 
-        <Rigth onClick={slideOne} className={'Clients__Slide-right ' + arrowRight} />
-        <Left onClick={slideTwo} className={'Clients__Slide-left ' +arrowLeft} />
+        <Rigth onClick={slideOne} className={'Clients__Slide-right ' + arrowLeft} />
+        <Left onClick={slideTwo} className={'Clients__Slide-left ' + arrowRight} />
             <h2>Alguns de Nossos Clientes</h2>
             <div className={ slideActiv }>
                 <img src={Ameii} alt='Ameii' className="Clients__Logo"/>
@@ -64,6 +68,8 @@ const Clients = () => {
                 <img src={Meurer} alt='Meurer Odontologia Especializada' className="Clients__Logo"/>
                 <img src={Realize} alt='Imobiliária Realize' className="Clients__Logo"/>
                 <img src={Flexmatic} alt='Flexmatic Energia Solar' className="Clients__Logo"/>
+                <img src={Coser} alt='Coser Auto Serviço' className="Clients__Logo"/>
+                <img src={Briancini} alt='Briancini Tintas' className="Clients__Logo"/>
 
             </div>
             <div className={ slideActiv == classSlider[0] ? classSlider[1] : classSlider[0] }>
@@ -79,11 +85,13 @@ const Clients = () => {
                 <img src={OralBrasil} alt='Oral Brasil' className="Clients__Logo"/>
                 <img src={Tac} alt='Tac Telecom' className="Clients__Logo"/>
                 <img src={Virtuosa} alt='Virtuosa Cliníca Estética' className="Clients__Logo"/>
+                <img src={CoserPremium} alt='Coser Premium Cars' className="Clients__Logo"/>
+                <img src={Sls} alt='SLS Electic Motors' className="Clients__Logo"/>
 
             </div>
             <div>
-                <button className={ slideActiv ==  classSlider[0]  ? classSlider[2]  : classSlider[3] } onClick={slideOne}></button>
-                <button className={ slideActiv ==  classSlider[0]  ? classSlider[3]  : classSlider[2] }  onClick={slideTwo}></button>
+                <button className={ slideActiv ==  classSlider[0]  ? classSlider[3]  : classSlider[2] } onClick={slideOne}></button>
+                <button className={ slideActiv ==  classSlider[0]  ? classSlider[2]  : classSlider[3] }  onClick={slideTwo}></button>
             </div>
             <div className="Clients__btn">
             <a href="https://wa.me/5554999009687" target='_blank'>Escalar meu Negócio</a>
