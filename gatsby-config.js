@@ -18,5 +18,12 @@ module.exports = {
         pixelId: "1912545459091301",
       },
     },
+    {
+      resolve: "gatsby-plugin-google-tagmanager",
+      options: {
+        id: "GTM-THNZXZJ",
+        includeInDevelopment: false,
+      },
+    },
   ]
 }
