@@ -4,6 +4,7 @@ import Header from "./components/Header"
 import Topo from "./campanhas/Topo"
 import './Campanha.css'
 import Form from "./campanhas/Form"
+import Clientes from "./campanhas/Clientes"
 
 const NotFoundPage = () => {
   return (
@@ -11,6 +12,7 @@ const NotFoundPage = () => {
     <main className='Corpo'>
       <Topo />
       <Form />
+      <Clientes />
     </main>
 
   )
