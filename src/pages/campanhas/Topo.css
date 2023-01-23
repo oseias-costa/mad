@@ -1,0 +1,64 @@
+.Topo {
+    padding-top: 3em;
+    padding-left: 10em;
+    display: flex;
+    justify-content: space-between;
+    background-color: #00172F;
+}
+
+.Topo-chamada{
+    max-width: 600px;
+}
+
+.Topo-chamada > h2 {
+    color: #FFF;
+    margin-top: 1em;
+}
+.Topo-chamada > p {
+    color: #DDD;
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+
+.Topo-chamada > button {
+    background-color: #FFF;
+    color: #00172F;
+    border-radius: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: bold;
+    font-size: large;
+    transition: all 0.3s ease-in-out;
+    font-weight: 600;
+    cursor: pointer;
+    border: 2px solid #fff;
+}
+
+.Topo-chamada > button:hover{
+    color: #fff;
+    background-color: #00172F;
+}
+
+
+
+.foto{
+    width: 20em;
+}
+
+@media (max-width: 950px){
+    .Topo{
+        flex-direction: column;
+        padding-left: 0;
+    }
+    .Topo-chamada{
+        padding-left: 0.5em;
+        padding-right: .5em;
+        text-align: center;
+    }
+    .Topo-foto{
+        align-self: flex-end;
+    }
+
+}
