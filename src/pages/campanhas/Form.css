@@ -15,7 +15,7 @@
 
 
 
-.formulario > div > input{
+.inputForm{
     color: #fff;
     background-color: #404040;
     padding: 0.9em;
@@ -24,7 +24,7 @@
     width: 100%;
 }
 
-.formulario > div > input::placeholder{
+.inputForm::placeholder{
     color: #D4D4D4;
 }
 
