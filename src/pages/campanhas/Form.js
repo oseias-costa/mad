@@ -30,7 +30,7 @@ const url = 'https://script.google.com/macros/s/AKfycbzm0cPK509VaZ1Cwf3wB2R8bixn
 }
 
     return (
-        <section className="formulario">
+        <section className="formulario" id='formulario'>
             <div>
                 <h2>AGENDE UMA SESSÃO ESTRATÉGICA E DESCUBRA O PASSO A PASSO.</h2>
                 <p>PREENCHA O FORMULÁRIO ABAIXO</p>
