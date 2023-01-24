@@ -8,10 +8,14 @@ const [cadastro, setCadatro] = useState({
     Telefone: '',
     Instagram: '',
     Cargo: '',
-    campanha: campanha
+    campanha: campanha,
+    VoceJaInvestiuEmAds: ''
+    
 })
 
-const url = 'https://script.google.com/macros/s/AKfycbzm0cPK509VaZ1Cwf3wB2R8bixnDDM4PZTAzwnpuhdXB4lPNA4HpEcfvkY5_5rTdSJ3xA/exec'
+console.log(cadastro)
+
+const url = 'https://script.google.com/macros/s/AKfycbxLGcj_mzyQTtjxs1D6Za-dSvFO3eCQz1PwOQ1uJqvzh9DF7W6rd0-VDqSMztSgi7O8OQ/exec'
 
     async function sendRequest(e){
         console.log(e)
@@ -38,6 +42,8 @@ const url = 'https://script.google.com/macros/s/AKfycbzm0cPK509VaZ1Cwf3wB2R8bixn
             <div className="inputs">
                 <input type='text' required className="inputForm"
                     value={cadastro.Nome} onChange={(e) => setCadatro({...cadastro, Nome: e.target.value})}  placeholder="Nome e Sobrenome" /><br />
+                <input type='text' required className="inputForm"
+                    value={cadastro.NomeDaEmpresa} onChange={(e) => setCadatro({...cadastro, NomeDaEmpresa: e.target.value})}  placeholder="Nome da Empresa" /><br />
                 <input type='email' required className="inputForm"
                     value={cadastro.Email} onChange={(e) => setCadatro({...cadastro, Email: e.target.value})}  placeholder="Seu melhor e-mail" /><br />
                 <input type='text'required className="inputForm"
@@ -49,6 +55,27 @@ const url = 'https://script.google.com/macros/s/AKfycbzm0cPK509VaZ1Cwf3wB2R8bixn
                 <input type='text' required className="inputForm"
                 value={cadastro.Cargo} onChange={(e) => setCadatro({...cadastro, Cargo: e.target.value})}
                 placeholder="Qual é seu cargo na empresa" /><br />
+                <form>
+                    <p>Você já investiu em Ads?</p>
+                    <div>
+                    <input type='radio' onChange={e => setCadatro({...cadastro, VoceJaInvestiuEmAds: e.target.name})} value='Sim' name='opcao' /><p>Sim</p>
+                    <input  className="nao"  type='radio' onChange={e => setCadatro({...cadastro, VoceJaInvestiuEmAds: e.target.name})} value='Não' name='opcao' /><p>Não</p>
+                    </div>
+                </form>
+                <form>
+                    <p>Hoje os valores praticados pela nossa empresa partem de R$ 1.000 até R$ 2.500 mês, você está de acordo?</p>
+                    <div>
+                    <input type='radio' onChange={e => setCadatro({...cadastro, RecursoMad: e.target.name})} value='Sim' name='opcao' /><p>Sim</p>
+                    <input className="nao" type='radio' onChange={e => setCadatro({...cadastro, RecursoMad: e.target.name})} value='Não' name='opcao' /><p>Não</p>
+                    </div>
+                </form>
+                <form>
+                    <p>Recomendamos o investimento mínimo diário de R$ 35,00 por dia nas plataformas, tudo bem para você?</p>
+                    <div>
+                    <input type='radio' onChange={e => setCadatro({...cadastro, RecursoAds: e.target.name})} value='Sim' name='opcao' /><p>Sim</p>
+                    <input  className="nao"  type='radio' onChange={e => setCadatro({...cadastro, RecursoAds: e.target.name})} value='Não' name='opcao' /><p>Não</p>
+                    </div>
+                </form>
                <button type='submit' onClick={sendRequest}>Quero Receber o Contato da Mad Digital</button>
             </div>
         </section>
