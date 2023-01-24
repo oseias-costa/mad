@@ -66,6 +66,7 @@ form {
 
 form > p {
     text-align: left;
+    font-weight: 600;
 }
 
 
@@ -74,17 +75,16 @@ form > div {
 }
 
 form > div > p {
+    position: relative;
+    bottom: 2px;
     padding-left: 5px;
     padding-right: 15px;
     padding-top: 4px;
 }
 
-form > div:last-child{
-    padding-bottom: 15px;
+.error {
+    color: #F00;
 }
-
-
-
 
 @media (max-width: 700px){
     .formulario{

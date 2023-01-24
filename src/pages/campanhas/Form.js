@@ -9,16 +9,29 @@ const [cadastro, setCadatro] = useState({
     Instagram: '',
     Cargo: '',
     campanha: campanha,
-    VoceJaInvestiuEmAds: ''
-    
+    VoceJaInvestiuEmAds: '',
+    RecursoAds: '',
+    RecursoMad: ''    
 })
+const [ err, setErr ] = useState('')
 
+const verify = cadastro.Nome !== '' && 
+    cadastro.Email !== '' &&
+    cadastro.Telefone !== '' &&
+    cadastro.Instagram !== '' &&
+    cadastro.Cargo !== '' &&
+    cadastro.VoceJaInvestiuEmAds !== '' &&
+    cadastro.RecursoMad !== '' &&
+    cadastro.RecursoAds !== '' 
+
+console.log(verify)
 console.log(cadastro)
 
 const url = 'https://script.google.com/macros/s/AKfycbxLGcj_mzyQTtjxs1D6Za-dSvFO3eCQz1PwOQ1uJqvzh9DF7W6rd0-VDqSMztSgi7O8OQ/exec'
 
     async function sendRequest(e){
-        console.log(e)
+        
+        if(verify){
         const requestOptions = {
           method: "POST",
           mode: 'no-cors',
@@ -30,7 +43,11 @@ const url = 'https://script.google.com/macros/s/AKfycbxLGcj_mzyQTtjxs1D6Za-dSvFO
         let response = await fetch(url, requestOptions);
         let data = await response.text(); //or .json()
         console.log(data);
-        window.location.href = "/obrigado"
+        window.location.href = "/obrigado"        
+    } else {
+        setErr('Todos os campos devem ser preenchidos.')
+    }
+
 }
 
     return (
@@ -58,24 +75,25 @@ const url = 'https://script.google.com/macros/s/AKfycbxLGcj_mzyQTtjxs1D6Za-dSvFO
                 <form>
                     <p>Você já investiu em Ads?</p>
                     <div>
-                    <input type='radio' onChange={e => setCadatro({...cadastro, VoceJaInvestiuEmAds: e.target.name})} value='Sim' name='opcao' /><p>Sim</p>
-                    <input  className="nao"  type='radio' onChange={e => setCadatro({...cadastro, VoceJaInvestiuEmAds: e.target.name})} value='Não' name='opcao' /><p>Não</p>
+                    <input type='radio' onChange={e => setCadatro({...cadastro, VoceJaInvestiuEmAds: e.target.value})} value='Sim' name='opcao' /><p>Sim</p>
+                    <input  className="nao"  type='radio' onChange={e => setCadatro({...cadastro, VoceJaInvestiuEmAds: e.target.value})} value='Não' name='opcao' /><p>Não</p>
                     </div>
                 </form>
                 <form>
                     <p>Hoje os valores praticados pela nossa empresa partem de R$ 1.000 até R$ 2.500 mês, você está de acordo?</p>
                     <div>
-                    <input type='radio' onChange={e => setCadatro({...cadastro, RecursoMad: e.target.name})} value='Sim' name='opcao' /><p>Sim</p>
-                    <input className="nao" type='radio' onChange={e => setCadatro({...cadastro, RecursoMad: e.target.name})} value='Não' name='opcao' /><p>Não</p>
+                    <input type='radio' onChange={e => setCadatro({...cadastro, RecursoMad: e.target.value})} value='Sim' name='opcao' /><p>Sim</p>
+                    <input className="nao" type='radio' onChange={e => setCadatro({...cadastro, RecursoMad: e.target.value})} value='Não' name='opcao' /><p>Não</p>
                     </div>
                 </form>
                 <form>
                     <p>Recomendamos o investimento mínimo diário de R$ 35,00 por dia nas plataformas, tudo bem para você?</p>
                     <div>
-                    <input type='radio' onChange={e => setCadatro({...cadastro, RecursoAds: e.target.name})} value='Sim' name='opcao' /><p>Sim</p>
-                    <input  className="nao"  type='radio' onChange={e => setCadatro({...cadastro, RecursoAds: e.target.name})} value='Não' name='opcao' /><p>Não</p>
+                    <input type='radio' onChange={e => setCadatro({...cadastro, RecursoAds: e.target.value})} value='Sim' name='opcao' /><p>Sim</p>
+                    <input  className="nao"  type='radio' onChange={e => setCadatro({...cadastro, RecursoAds: e.target.value})} value='Não' name='opcao' /><p>Não</p>
                     </div>
                 </form>
+                <p className="error">{err !== '' && verify ? null : err}</p>
                <button type='submit' onClick={sendRequest}>Quero Receber o Contato da Mad Digital</button>
             </div>
         </section>

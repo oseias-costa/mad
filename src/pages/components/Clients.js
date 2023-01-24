@@ -17,6 +17,8 @@ import Tac from '../../images/clients-logo/tac.png'
 import Virtuosa from '../../images/clients-logo/virtuosa.png'
 import Coser from '../../images/clients-logo/coser-logo.png'
 import Briancini from '../../images/clients-logo/briancini.png'
+import Pampa from '../../images/clients-logo/pampa.png'
+import PampaKia from '../../images/clients-logo/pampaKia.png'
 
 import Ameii from '../../images/clients-logo/logos-svg/amei.png'
 import ArcoIris from '../../images/clients-logo/logos-svg/arcoiris.png'
@@ -67,12 +69,14 @@ const Clients = () => {
                 <img src={BemViver} alt='Bem Viver Casa de Repouso' className="Clients__Logo"/>
                 <img src={Meurer} alt='Meurer Odontologia Especializada' className="Clients__Logo"/>
                 <img src={Realize} alt='Imobiliária Realize' className="Clients__Logo"/>
-                <img src={Flexmatic} alt='Flexmatic Energia Solar' className="Clients__Logo"/>
                 <img src={Coser} alt='Coser Auto Serviço' className="Clients__Logo"/>
                 <img src={Briancini} alt='Briancini Tintas' className="Clients__Logo"/>
+                <img src={Pampa} alt='Pampa VW' className="Clients__Logo"/>
+                <img src={PampaKia} alt='Pampa Kia' className="Clients__Logo"/>
 
             </div>
             <div className={ slideActiv == classSlider[0] ? classSlider[1] : classSlider[0] }>
+                <img src={Flexmatic} alt='Flexmatic Energia Solar' className="Clients__Logo"/>
                 <img src={AmandaFelippe} alt='Amanda Felippe' className="Clients__Logo"/>
                 <img src={DraVeronicaRosseto} alt='Dra. Verônica Rosseto' className="Clients__Logo"/>
                 <img src={Ivetu} alt='Ivetu Inspeção Veicular' className="Clients__Logo"/>
