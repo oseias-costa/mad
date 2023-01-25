@@ -27,7 +27,7 @@ const verify = cadastro.Nome !== '' &&
 console.log(verify)
 console.log(cadastro)
 
-const url = 'https://script.google.com/macros/s/AKfycbxLGcj_mzyQTtjxs1D6Za-dSvFO3eCQz1PwOQ1uJqvzh9DF7W6rd0-VDqSMztSgi7O8OQ/exec'
+const url = 'https://script.google.com/macros/s/AKfycbwxh0OIPzX1wiJi-IfXjCOyXtIq3VNQDzbBCx8sIiUCNAbCMD09eTPS0M_GeHAwqgAb5A/exec'
 
     async function sendRequest(e){
         
