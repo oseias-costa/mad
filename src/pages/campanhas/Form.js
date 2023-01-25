@@ -4,14 +4,15 @@ import './Form.css'
 const Form = ({campanha}) => {
 const [cadastro, setCadatro] = useState({
     Nome: '',
+    NomeDaEmpresa: '',
     Email: '',
     Telefone: '',
     Instagram: '',
     Cargo: '',
-    campanha: campanha,
     VoceJaInvestiuEmAds: '',
     RecursoAds: '',
-    RecursoMad: ''    
+    RecursoMad: '',
+    campanha: campanha,
 })
 const [ err, setErr ] = useState('')
 
