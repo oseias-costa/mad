@@ -36,7 +36,7 @@ const Results = () => {
                         <UsersIcon />
                       </div>
                       <div className="Result__Description-itemText">
-                        <h3>+ de 300</h3>
+                        <h3>+ de 500</h3>
                         <p>Clientes Atendidos</p>
                       </div>
                     </div>
@@ -45,7 +45,7 @@ const Results = () => {
                         <MoneyIcon />
                       </div>
                       <div className="Result__Description-itemText">
-                        <h3>+ de 2.5 milhões</h3>
+                        <h3>+ de 3 milhões</h3>
                         <p>investidos em anúncios</p>
                       </div>
                     </div>
