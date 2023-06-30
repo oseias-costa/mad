@@ -34,7 +34,7 @@ const Footer = () => {
                 </div>
                 <div className='Footer__Item-adress'>
                     <p>Unidade 2</p>
-                    <p>Vila Moema. Turabarão-SC</p>
+                    <p>Vila Moema. Tubarão-SC</p>
                 </div>
             </div>
         </footer>
