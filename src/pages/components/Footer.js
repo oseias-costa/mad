@@ -16,7 +16,7 @@ const Footer = () => {
                     <a href='https://www.instagram.com/maddigital__/' target='_blank'>
                         <InstagramIcon className='Footer__Item-social' />
                     </a>
-                    <a href='https://wa.me/5554999009687' target='_blank'>
+                    <a href='https://nux514f6cjp.typeform.com/to/itgZsLcm' target='_blanck'>
                         <WhatsIcon className='Footer__Item-social' />
                     </a>
                 </div>

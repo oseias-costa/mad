@@ -82,7 +82,7 @@ const Clients = () => {
                 <button className={ pageLogo === 2 ? classSlider[2]  : 'disable' }></button> */}
             </div>
             <div className="Clients__btn">
-            <a href="https://wa.me/5554999009687" target='_blank'>Escalar meu Negócio</a>
+            <a href='https://nux514f6cjp.typeform.com/to/itgZsLcm' target='_blanck'>Escalar meu Negócio</a>
             </div>
         </section>
     )

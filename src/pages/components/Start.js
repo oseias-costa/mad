@@ -18,7 +18,7 @@ const Start = () => {
                 </div>
                 <h1 className="Start__primary-h1">Pare de Procurar clientes e seja </h1><h1 className="Start__primary-destak">encontrado</h1><h1 className="Start__primary-h1">&nbsp;por eles</h1>
                 <h3>A forma mais eficaz de escalar seu negócio</h3>
-                <a href='https://wa.me/5554999009687' className="Start__button">Quero escalar meu negócio</a>
+                <a href='https://nux514f6cjp.typeform.com/to/itgZsLcm' target='_blanck' className="Start__button">Quero escalar meu negócio</a>
             </div>
             <a href="#HowWork" className="Start__primary-linkDown"><Down className='Start__primary-btnDown' /></a>
         </section>

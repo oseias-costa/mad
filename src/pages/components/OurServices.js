@@ -52,7 +52,7 @@ const OurServices = () => {
             <div className="OurServices__Block">
                 {itemService}
             </div>
-            <a href='https://wa.me/5554999009687' target='_blank'>Mais Informações</a>
+            <a href='https://nux514f6cjp.typeform.com/to/itgZsLcm' target='_blanck'>Mais Informações</a>
         </section>
     )
 }
