@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: `https://www.madcompany.com.br`,
+    siteUrl: `https://www.maddigital.com.br`
   },
   plugins: [
     `gatsby-transformer-sharp`,
@@ -15,7 +15,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-facebook-pixel`,
       options: {
-        pixelId: "1154782721895778",
+        pixelId: "7247562658592878",
       },
     },
     {
